@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 const Form = ({ url, textBody, onChange, onSubmit }) => (
   <div>
     <form onSubmit={onSubmit}>
+      
       <label> URL:
         <input 
           type="text"
@@ -13,6 +14,7 @@ const Form = ({ url, textBody, onChange, onSubmit }) => (
         >
         </input>
       </label>
+
       <div>
         <label>
           <input 
@@ -55,6 +57,7 @@ const Form = ({ url, textBody, onChange, onSubmit }) => (
           /> DELETE 
         </label>
       </div>
+
       <textarea 
         placeholder="JSON Body"
         name="textBody"

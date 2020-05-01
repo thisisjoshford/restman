@@ -12,8 +12,9 @@ const FormContainer = () => {
     if(target.name === 'textBody') setTextBody(target.value);
   };
 
-  const handleSubmit = ({ target }) => {
+  const handleSubmit = (event) => {
     event.preventDefault();
+    console.log('submit was clicked');
     console.log(method + url + textBody);
   };
 
