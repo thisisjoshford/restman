@@ -1,44 +1,78 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Form = ({ onSubmit }) => (
+const Form = ({ url, textBody, onChange, onSubmit }) => (
   <div>
     <form onSubmit={onSubmit}>
-      
       <label> URL:
-        <input type="text">
+        <input 
+          type="text"
+          name="url"
+          value={url}
+          onChange={onChange}
+        >
         </input>
       </label>
-
       <div>
         <label>
-          <input type="radio" name="method" value="get" /> GET 
+          <input 
+            type="radio" 
+            name="method" 
+            value="get" 
+            onChange={onChange}
+          /> GET 
         </label>
         <label>
-          <input type="radio" name="method" value="post" /> POST 
+          <input 
+            type="radio" 
+            name="method" 
+            value="post"
+            onChange={onChange}
+          /> POST 
         </label>
         <label>
-          <input type="radio" name="method" value="put" /> PUT 
+          <input 
+            type="radio" 
+            name="method" 
+            value="put"
+            onChange={onChange} 
+          /> PUT 
         </label>
         <label>
-          <input type="radio" name="method" value="patch" /> PATCH 
+          <input 
+            type="radio" 
+            name="method" 
+            value="patch" 
+            onChange={onChange}
+          /> PATCH 
         </label>
         <label>
-          <input type="radio" name="method" value="delete" /> DELETE 
+          <input 
+            type="radio" 
+            name="method" 
+            value="delete"
+            onChange={onChange}
+          /> DELETE 
         </label>
       </div>
-
-      <textarea placeholder="JSON Body"></textarea>
+      <textarea 
+        placeholder="JSON Body"
+        name="textBody"
+        value={textBody}
+        onChange={onChange}
+      >
+      </textarea>
       <button type="submit">GO!</button>
     </form>
   </div>
 );
 
 Form.propTypes = {
-  text: PropTypes.string.isRequired,
+  url: PropTypes.string.isRequired,
+  textBody: PropTypes.string.isRequired,
+  onChange: PropTypes.func.isRequired,
   onSubmit: PropTypes.func.isRequired,
 };
-
 
 export default Form;
 

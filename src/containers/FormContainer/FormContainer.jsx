@@ -18,8 +18,7 @@ const FormContainer = () => {
   };
 
   return (
-    <Form 
-      method={method} 
+    <Form
       url={url} 
       textBody={textBody} 
       onChange={handleChange}
