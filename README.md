@@ -21,6 +21,8 @@
 
 ## Services
 [] - api fetch (relies on 5 separate custom hooks)
+[] - handle URL change
+
 
 ## Order
  * Header

@@ -14,7 +14,7 @@ const Form = ({ url, textBody, onChange, onSubmit }) => (
         >
         </input>
       </label>
-
+      
       <div>
         <label>
           <input 
@@ -65,7 +65,9 @@ const Form = ({ url, textBody, onChange, onSubmit }) => (
         onChange={onChange}
       >
       </textarea>
+
       <button type="submit">GO!</button>
+
     </form>
   </div>
 );
