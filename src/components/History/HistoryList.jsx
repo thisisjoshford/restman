@@ -24,3 +24,4 @@ HistoryList.propTypes = {
   })).isRequired
 };
 
+export default HistoryList;

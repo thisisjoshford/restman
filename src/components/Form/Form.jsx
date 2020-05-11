@@ -20,7 +20,7 @@ const Form = ({ url, textBody, onChange, onSubmit }) => (
           <input 
             type="radio" 
             name="method" 
-            value="get" 
+            value="GET" 
             onChange={onChange}
           /> GET 
         </label>
@@ -28,7 +28,7 @@ const Form = ({ url, textBody, onChange, onSubmit }) => (
           <input 
             type="radio" 
             name="method" 
-            value="post"
+            value="POST"
             onChange={onChange}
           /> POST 
         </label>
@@ -36,7 +36,7 @@ const Form = ({ url, textBody, onChange, onSubmit }) => (
           <input 
             type="radio" 
             name="method" 
-            value="put"
+            value="PUT"
             onChange={onChange} 
           /> PUT 
         </label>
@@ -44,7 +44,7 @@ const Form = ({ url, textBody, onChange, onSubmit }) => (
           <input 
             type="radio" 
             name="method" 
-            value="patch" 
+            value="PATCH" 
             onChange={onChange}
           /> PATCH 
         </label>
@@ -52,7 +52,7 @@ const Form = ({ url, textBody, onChange, onSubmit }) => (
           <input 
             type="radio" 
             name="method" 
-            value="delete"
+            value="DELETE"
             onChange={onChange}
           /> DELETE 
         </label>
