@@ -12,12 +12,6 @@
 ## Containers
 [x] - Control (handleSubmit, handleFormData)
 
-## Hooks
-[] - useGet
-[] - usePost
-[] - usePut
-[] - usePatch
-[] - useDelete
 
 ## Services
 [x] - api fetch (relies on 5 separate custom hooks)
