@@ -1,10 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import style from './Response.css';
 
 const Response = ({ response }) => (
-  <pre>
-    {JSON.stringify(response, null, 2)}
-  </pre>
+  <section className={style.Box}>
+    <pre>
+      {JSON.stringify(response, null, 2)}
+    </pre>
+  </section>
 );
 
 Response.propTypes = {
