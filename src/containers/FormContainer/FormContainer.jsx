@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Form from '../../components/Form/Form';
+import { fetchRequest } from '../../services/fetchRequest';
 
 const FormContainer = () => {
   const [method, setMethod] = useState('');
@@ -14,8 +15,8 @@ const FormContainer = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log('submit was clicked');
-    console.log(method + url + textBody);
+    fetchRequest(url, method, textBody)
+      .then(json => console.log(json));
   };
 
   return (
