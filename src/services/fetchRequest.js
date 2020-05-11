@@ -11,4 +11,4 @@ export const fetchRequest = (url, method, body) => {
     }
   })
     .then(res => res.json());
-}
+};
