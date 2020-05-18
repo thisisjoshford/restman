@@ -1,14 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import style from './FormStyle.css';
 
 const Form = ({ url, textBody, onChange, onSubmit }) => (
-  <div>
-    <form onSubmit={onSubmit}>
+  <div className={style.Form}>
+    <form className={style.Form} onSubmit={onSubmit}>
       
-      <label> URL:
+      <label>
         <input 
           type="text"
           name="url"
+          className={style.Url}
+          placeholder='enter target URL... '
           value={url}
           onChange={onChange}
         >
@@ -16,40 +19,45 @@ const Form = ({ url, textBody, onChange, onSubmit }) => (
       </label>
       
       <div>
-        <label>
+        <label className={style.Radio}>
           <input 
+            className={style.RadioButton}
             type="radio" 
             name="method" 
             value="GET" 
             onChange={onChange}
           /> GET 
         </label>
-        <label>
+        <label className={style.Radio}>
           <input 
+            className={style.RadioButton}
             type="radio" 
             name="method" 
             value="POST"
             onChange={onChange}
           /> POST 
         </label>
-        <label>
+        <label className={style.Radio}>
           <input 
+            className={style.RadioButton}
             type="radio" 
             name="method" 
             value="PUT"
             onChange={onChange} 
           /> PUT 
         </label>
-        <label>
+        <label className={style.Radio}>
           <input 
+            className={style.RadioButton}
             type="radio" 
             name="method" 
             value="PATCH" 
             onChange={onChange}
           /> PATCH 
         </label>
-        <label>
+        <label className={style.Radio}>
           <input 
+            className={style.RadioButton}
             type="radio" 
             name="method" 
             value="DELETE"
