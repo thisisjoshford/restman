@@ -1,26 +1,22 @@
 # RESTMAN (Postman Clone)
 
 ## Components
-[] - App
-[] - Header
-[] - Form
-      [] - URL
-      [] - Buttons (Get, Post, Put, Patch, Delete) & Submit
-[] - Response
-[] - History
+[x] - App
+[x] - Header
+[x] - Form
+      [x] - URL
+      [x] - Buttons (Get, Post, Put, Patch, Delete) & Submit
+[x] - Response
+[x] - History
 
 ## Containers
-[] - Control (handleSubmit, handleFormData)
+[x] - Control (handleSubmit, handleFormData)
 
-## Hooks
-[] - useGet
-[] - usePost
-[] - usePut
-[] - usePatch
-[] - useDelete
 
 ## Services
-[] - api fetch (relies on 5 separate custom hooks)
+[x] - api fetch (relies on 5 separate custom hooks)
+[x] - handle URL change
+
 
 ## Order
  * Header
